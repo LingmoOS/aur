@@ -7,7 +7,7 @@ depends=(
     "modemmanager-qt5" "bluez-qt5" "libkscreen5" 
     "kio5" "qt5-sensors"
 )
-makedepends=("cmake" "extra-cmake-modules" "pkgconf")
+makedepends=("cmake" "extra-cmake-modules")
 pkgdesc="System library for Lingmo applications"
 pkgrel=0
 pkgver=1.9.10
