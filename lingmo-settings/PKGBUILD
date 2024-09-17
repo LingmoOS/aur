@@ -26,6 +26,6 @@ build() {
     make
 }
 package() {
-    cd $pkgname-$pkgver
+    cd $pkgname-$pkgver/build
     make DESTDIR="$pkgdir" install
 }

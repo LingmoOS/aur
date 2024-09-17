@@ -28,6 +28,6 @@ build() {
 }
 
 package() {
-    cd lib_lingmo-$pkgver
+    cd lib_lingmo-$pkgver/build
     make DESTDIR="$pkgdir" install
 }
