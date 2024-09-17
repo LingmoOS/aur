@@ -16,6 +16,7 @@ jobs:
         pacman-key --init
         pacman-key --populate archlinux
         pacman -Syu --noconfirm base-devel git
+        echo 'MAKEFLAGS="--jobs=$(nproc)"' >> /etc/makepkg.conf
         useradd -m builder
         echo 'builder ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
         sudo -u builder git clone --depth 1 https://github.com/LingmoOS/aur /tmp/aur
