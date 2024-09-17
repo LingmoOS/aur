@@ -24,6 +24,6 @@ jobs:
     - name: Build Packages
       run: |
         cd /tmp/aur
-        for i in liblingmo lingmoui lingmo-core lingmo-settings;do
+        for i in liblingmo lingmoui lingmo-core lingmo-settings lingmo-terminal;do
           pushd $i;sudo -u builder makepkg -cfsi --noconfirm;popd
         done
