@@ -1,3 +1,4 @@
+# Maintainer: chun-awa <chun-awa@outlook.com>
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-settings
 arch=("x86_64")
@@ -13,7 +14,7 @@ pkgver=2.1.5
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+sha256sums=('fe747160a9aa44e29ff24fc7c1451d7cc25f8603aad890e232207978e84a2009')
 
 prepare() {
     cd "$srcdir/${pkgname}-${pkgver}"
