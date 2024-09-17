@@ -15,16 +15,16 @@ source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.
 sha256sums=('a706107c58c302be95698e548cff2696fc9e4491b50394c18591d288dd86f3f4')
 
 prepare() {
-    cd "$srcdir/${pkgname}-${pkgver}"
+    cd "$srcdir/LingmoUI-${pkgver}"
     mkdir -p build
 }
 
 build() {
-    cd "$srcdir/${pkgname}-${pkgver}/build"
+    cd "$srcdir/LingmoUI-${pkgver}/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make
 }                                                                                                        
 package() {
-    cd $pkgname-$pkgver/build
+    cd LingmoUI-$pkgver/build
     make DESTDIR="$pkgdir" install
 }
