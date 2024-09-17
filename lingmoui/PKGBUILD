@@ -1,0 +1,30 @@
+# Maintainer: chun-awa <chun-awa@outlook.com>
+# Maintainer: Intro <intro-iu@outlook.com>
+pkgname=lingmoui
+arch=("x86_64")
+depends=(
+    "qt5-quickcontrols2" "qt5-x11extras" "kwindowsystem5"
+)
+makedepends=("cmake" "extra-cmake-modules")
+pkgdesc="A GUI library based on QQC2 (Qt Quick Controls 2), every Lingmo application uses it."
+pkgrel=0
+pkgver=2.2.0
+url="https://lingmo.org"
+license=("GPL")
+source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+
+prepare() {
+    cd "$srcdir/lib_lingmo-${pkgver}"
+    mkdir -p build
+}
+
+build() {
+    cd "$srcdir/lib_lingmo-${pkgver}/build"
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+    make
+}                                                                                                        
+package() {
+    cd $pkgname-$pkgver
+    make DESTDIR="$pkgdir" install
+}
