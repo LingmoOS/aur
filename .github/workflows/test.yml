@@ -1,0 +1,28 @@
+name: Test Building
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker.io/library/archlinux:latest
+    steps:
+    - name: Set up build environment
+      run: |
+        pacman-key --init
+        pacman-key --populate archlinux
+        pacman -Syu --noconfirm base-devel git
+        useradd -m builder
+        echo 'builder ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
+        sudo -u builder git clone --depth 1 https://github.com/LingmoOS/aur /tmp/aur
+
+    - name: Build Packages
+      run: |
+        cd /tmp/aur
+        for i in liblingmo lingmoui lingmo-core lingmo-settings;do
+          pushd $i;sudo -u builder makepkg -cfsi --noconfirm;popd
+        done
