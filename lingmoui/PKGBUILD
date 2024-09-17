@@ -7,7 +7,7 @@ depends=(
 )
 makedepends=("cmake" "extra-cmake-modules")
 pkgdesc="A GUI library based on QQC2 (Qt Quick Controls 2), every Lingmo application uses it."
-pkgrel=0
+pkgrel=1
 pkgver=2.2.0
 url="https://lingmo.org"
 license=("GPL")
