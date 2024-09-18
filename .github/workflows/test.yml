@@ -24,6 +24,6 @@ jobs:
     - name: Build Packages
       run: |
         cd /tmp/aur
-        for i in $(ls -dU lingmoui);do
+        for i in $(ls -dU lingmoui *);do
           [ -d $i ] && (pushd $i;sudo -u builder makepkg -cfsi --noconfirm;popd)
         done
