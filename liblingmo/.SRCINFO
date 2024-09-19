@@ -9,6 +9,7 @@ pkgbase = liblingmo
 	makedepends = extra-cmake-modules
 	depends = qt5-quickcontrols2
 	depends = networkmanager-qt5
+	depends = modemmanager-qt5
 	depends = bluez-qt5
 	depends = libkscreen5
 	depends = kio5

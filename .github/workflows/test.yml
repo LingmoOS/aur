@@ -20,10 +20,14 @@ jobs:
         useradd -m builder
         echo 'builder ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
         sudo -u builder git clone --depth 1 https://github.com/LingmoOS/aur /tmp/aur
+        for i in modemmanager-qt5;do
+          sudo -u builder git clone --depth 1 https://aur.archlinux.org/$i.git /tmp/$i
+          pushd /tmp/$i;sudo -u builder makepkg -csi;popd
+        done
 
     - name: Build Packages
       run: |
         cd /tmp/aur
         for i in $(ls -dU lingmoui liblingmo *);do
-          [ -d $i ] && (pushd $i;sudo -u builder makepkg -cfsi --noconfirm;popd)
+          [ -d $i ] && (pushd $i;sudo -u builder makepkg -csi --noconfirm;popd)
         done
