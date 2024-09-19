@@ -22,7 +22,7 @@ jobs:
         sudo -u builder git clone --depth 1 https://github.com/LingmoOS/aur /tmp/aur
         for i in modemmanager-qt5;do
           sudo -u builder git clone --depth 1 https://aur.archlinux.org/$i.git /tmp/$i
-          pushd /tmp/$i;sudo -u builder makepkg -csi --noconfirm;popd
+          pushd /tmp/$i;sudo -u builder makepkg -csi --noconfirm --skippgpcheck;popd
         done
 
     - name: Build Packages
