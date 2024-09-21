@@ -1,7 +1,7 @@
 pkgbase = lingmo-filemanager
 	pkgdesc = A file manager that simple to use, beautiful, and retain the classic PC interactive design used by LingmoOS.
 	pkgver = 0.8
-	pkgrel = 0
+	pkgrel = 1
 	url = https://lingmo.org
 	arch = x86_64
 	license = GPL
