@@ -28,6 +28,6 @@ build() {
     make
 }
 package() {
-    cd $pkgname-$pkgver/build
+    cd $pkgname-${pkgver//_/-}/build
     make DESTDIR="$pkgdir" install
 }
