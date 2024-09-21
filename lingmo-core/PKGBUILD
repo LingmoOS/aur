@@ -18,16 +18,16 @@ source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.
 sha256sums=('ee39f817858b8c12643d181bb385c2e23701853c06f9e4facd30e08b3548c144')
 
 prepare() {
-    cd "$srcdir/${pkgname}-${pkgver}"
+    cd "${srcdir}/${pkgname}-${pkgver}"
     mkdir -p build
 }
 
 build() {
-    cd "$srcdir/${pkgname}-${pkgver}/build"
+    cd "${srcdir}/${pkgname}-${pkgver}/build"
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make
 }
 package() {
-    cd $pkgname-$pkgver/build
-    make DESTDIR="$pkgdir" install
+    cd ${pkgname}-${pkgver}/build
+    make DESTDIR="${pkgdir}" install
 }
