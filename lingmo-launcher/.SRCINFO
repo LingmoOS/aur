@@ -12,6 +12,6 @@ pkgbase = lingmo-launcher
 	depends = qt5-quickcontrols2
 	depends = qt5-tools
 	source = https://github.com/LingmoOS/lingmo-launcher/archive/refs/tags/2.0.0.tar.gz
-	sha256sums = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+	sha256sums = eaa7cb7eb031a0f29930cb19f4251d2291a973327af9bddbbf5ff36739bc999f
 
 pkgname = lingmo-launcher
