@@ -2,7 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-terminal
 arch=("x86_64")
-depends=("qt5-base" "qt5-declarative" "qt5-quickcontrols2" "qt5-x11extras"
+depends=(
+    "qt5-base" "qt5-declarative" "qt5-quickcontrols2" "qt5-x11extras"
     "qt5-tools" "qt5-graphicaleffects" "lingmoui"
 )
 makedepends=("extra-cmake-modules")

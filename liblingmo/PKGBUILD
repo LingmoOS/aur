@@ -2,7 +2,10 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=liblingmo
 arch=("x86_64")
-depends=("qt5-quickcontrols2" "networkmanager-qt5" "modemmanager-qt5" "bluez-qt5" "libkscreen5" "kio5" "qt5-sensors")
+depends=(
+    "qt5-quickcontrols2" "networkmanager-qt5" "modemmanager-qt5" "bluez-qt5"
+    "libkscreen5" "kio5" "qt5-sensors"
+)
 makedepends=("extra-cmake-modules")
 pkgdesc="System library for Lingmo applications"
 pkgrel=1

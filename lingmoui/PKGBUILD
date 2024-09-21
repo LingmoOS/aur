@@ -2,10 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmoui
 arch=("x86_64")
-depends=(
-    "qt5-quickcontrols2" "qt5-x11extras" "kwindowsystem5"
-)
-makedepends=("cmake" "extra-cmake-modules")
+depends=("qt5-quickcontrols2" "qt5-x11extras" "kwindowsystem5")
+makedepends=("extra-cmake-modules")
 pkgdesc="A GUI library based on QQC2 (Qt Quick Controls 2), every Lingmo application uses it."
 pkgrel=1
 pkgver=2.2.0
