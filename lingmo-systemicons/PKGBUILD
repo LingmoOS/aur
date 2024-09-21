@@ -1,0 +1,29 @@
+# Maintainer: Intro <intro-iu@outlook.com>
+pkgname=lingmo-systemicons
+arch=("x86_64")
+depends=()
+makedepends=("cmake" "extra-cmake-modules")
+conflicts=("cutefish-icons")
+pkgdesc="Default icon theme for Lingmo."
+pkgrel=1
+pkgver=2.0.4
+url="https://lingmo.org"
+license=("GPL")
+source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+
+prepare() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    mkdir -p build
+}
+
+build() {
+    cd "$srcdir/${pkgname}-${pkgver}/build"
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+    make
+}
+package() {
+    cd $pkgname-$pkgver/build
+    make DESTDIR="$pkgdir" install
+}
+
