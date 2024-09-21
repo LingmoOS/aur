@@ -2,16 +2,10 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-terminal
 arch=("x86_64")
-depends=(
-    "qt5-base"
-    "qt5-declarative"
-    "qt5-quickcontrols2"
-    "qt5-x11extras"
-    "qt5-tools"
-    "qt5-graphicaleffects"
-    "lingmoui"
+depends=("qt5-base" "qt5-declarative" "qt5-quickcontrols2" "qt5-x11extras"
+    "qt5-tools" "qt5-graphicaleffects" "lingmoui"
 )
-makedepends=("cmake" "extra-cmake-modules")
+makedepends=("extra-cmake-modules")
 pkgdesc="Terminal emulator using LingmoUI as interface style on LingmoOS."
 pkgrel=1
 pkgver=1.9.9

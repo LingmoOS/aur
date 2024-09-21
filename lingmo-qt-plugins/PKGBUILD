@@ -2,11 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-qt-plugins
 arch=("x86_64")
-depends=(
-    "qt5-base" "qt5-tools" "qt5-x11extras" 
-    "libqt5xdg" "libdbusmenu-qt5" "libxcb"
-)
-makedepends=("cmake" "extra-cmake-modules")
+depends=("qt5-base" "qt5-tools" "qt5-x11extras" "libqt5xdg" "libdbusmenu-qt5" "libxcb")
+makedepends=("extra-cmake-modules")
 pkgdesc="Unify Qt application style of LingmoOS."
 pkgrel=1
 pkgver=2.0.0

@@ -5,7 +5,6 @@ pkgbase = lingmo-systemicons
 	url = https://lingmo.org
 	arch = x86_64
 	license = GPL
-	makedepends = cmake
 	makedepends = extra-cmake-modules
 	conflicts = cutefish-icons
 	source = https://github.com/LingmoOS/lingmo-systemicons/archive/refs/tags/2.0.4.tar.gz

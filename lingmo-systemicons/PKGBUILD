@@ -3,7 +3,7 @@
 pkgname=lingmo-systemicons
 arch=("x86_64")
 depends=()
-makedepends=("cmake" "extra-cmake-modules")
+makedepends=("extra-cmake-modules")
 conflicts=("cutefish-icons")
 pkgdesc="Default icon theme for Lingmo."
 pkgrel=1

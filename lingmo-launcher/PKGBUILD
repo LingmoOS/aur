@@ -2,13 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-launcher
 arch=("x86_64")
-depends=(
-    "kwindowsystem5"
-    "qt5-base"
-    "qt5-quickcontrols2"
-    "qt5-tools"
-)
-makedepends=("cmake" "extra-cmake-modules")
+depends=("kwindowsystem5" "qt5-base" "qt5-quickcontrols2" "qt5-tools")
+makedepends=("extra-cmake-modules")
 pkgdesc="Application launcher for Lingmo."
 pkgrel=1
 pkgver=2.0.0

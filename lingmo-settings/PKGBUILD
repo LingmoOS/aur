@@ -7,7 +7,7 @@ depends=(
     "fontconfig" "networkmanager-qt" "modemmanager-qt" "libqtxdg"
     "lingmoui"
 )
-makedepends=("cmake" "extra-cmake-modules")
+makedepends=("extra-cmake-modules")
 pkgdesc="The system settings application for LingmoOS uses LingmoUI as the interface style."
 pkgrel=1
 pkgver=2.1.5

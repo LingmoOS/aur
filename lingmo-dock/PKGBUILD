@@ -2,13 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-dock
 arch=("x86_64")
-depends=(
-  "kwindowsystem5"
-  "qt5-quickcontrols2"
-  "qt5-x11extras"
-  "qt5-tools"
-)
-makedepends=("cmake" "extra-cmake-modules" "make" "gcc" "pkgconf")
+depends=("kwindowsystem5" "qt5-quickcontrols2" "qt5-x11extras" "qt5-tools" "lingmoui")
+makedepends=("extra-cmake-modules")
 pkgdesc="The dock component of LingmoOS, which relies on LingmoUI."
 pkgrel=1
 pkgver=2.0.2

@@ -2,11 +2,8 @@
 # Maintainer: Intro <intro-iu@outlook.com>
 pkgname=lingmo-calculator
 arch=("x86_64")
-depends=(
-    "qt5-tools"
-    "qt5-quickcontrols2"
-)
-makedepends=("cmake" "extra-cmake-modules")
+depends=("qt5-tools" "qt5-quickcontrols2")
+makedepends=("extra-cmake-modules")
 pkgdesc="A simple calculator."
 pkgrel=1
 pkgver=0.6.1
