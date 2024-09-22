@@ -1,2 +1,2 @@
 # aur
-Lingmo packages for Arch Linux.
+Lingmo packages on AUR.
