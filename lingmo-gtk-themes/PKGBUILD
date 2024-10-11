@@ -5,12 +5,12 @@ depends=()
 makedepends=("extra-cmake-modules")
 pkgdesc="GTK themes for Lingmo OS"
 pkgrel=1
-pkgver=2.0.0
+pkgver=2.0.1
 
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('66b55621337316e30b708dc8284d47d2943c9e00bdde7b1b4f2704012f17583e')
+sha256sums=('3be6ff40f1ced6bef57f2d33e26549f7475e7a4684812ed89a5a20f0ee040fe2')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"

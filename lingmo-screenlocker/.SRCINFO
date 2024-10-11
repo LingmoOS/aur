@@ -1,6 +1,6 @@
 pkgbase = lingmo-screenlocker
 	pkgdesc = Screenlocker for LingmoOS.
-	pkgver = 2.0.1
+	pkgver = 2.0.2
 	pkgrel = 1
 	url = https://lingmo.org
 	arch = x86_64
@@ -11,7 +11,7 @@ pkgbase = lingmo-screenlocker
 	depends = qt5-x11extras
 	depends = dbus
 	depends = libx11
-	source = https://github.com/LingmoOS/lingmo-screenlocker/archive/refs/tags/2.0.1.tar.gz
-	sha256sums = e863a4826944da69e5aa791a8049a2350a49a1f253b3522d7e1f099d947a3959
+	source = https://github.com/LingmoOS/lingmo-screenlocker/archive/refs/tags/2.0.2.tar.gz
+	sha256sums = e9320d73c968e7e59eab660cd8e38569f7bc5da9042d109675173d383f1a43ca
 
 pkgname = lingmo-screenlocker

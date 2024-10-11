@@ -9,11 +9,11 @@ depends=(
 makedepends=("extra-cmake-modules")
 pkgdesc="The dock component of LingmoOS, which relies on LingmoUI."
 pkgrel=1
-pkgver=2.0.2
+pkgver=2.0.3
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('3b07175e2f24c4579041dd30f725a39d8135a873c0b661405a9dde2fcdd395f3')
+sha256sums=('98bcd574998b9d452125a59ba0abcb439f0ecc903038d94301a9cbf759bd946b')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"
