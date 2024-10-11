@@ -28,6 +28,8 @@ jobs:
     - name: Build Packages
       run: |
         cd /tmp/aur
-        for i in $(ls -dU lingmoui liblingmo *);do
+        packages=($(ls -dU lingmoui *))
+        packages=($(echo "${packages[@]}" | tr ' ' '\n' | awk '!seen[$0]++'))
+        for i in "${packages[@]}";do
           [ -d $i ] && (pushd $i;sudo -u builder makepkg -csi --noconfirm;popd)
         done
