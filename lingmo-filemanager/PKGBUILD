@@ -6,11 +6,11 @@ depends=("qt5-quickcontrols2" "kwindowsystem5" "kio5")
 makedepends=("extra-cmake-modules")
 pkgdesc="A file manager that simple to use, beautiful, and retain the classic PC interactive design used by LingmoOS."
 pkgrel=1
-pkgver=0.8
+pkgver=0.8.1
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('e685f2ca83ac31b0227cf3480e925542fa026beeee057a77c375f8d89f0d8047')
+sha256sums=('d0a6048bdd8cc5fa52f3b8eb113d4f0347ed163e8df965091bb188982c58afdf')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"

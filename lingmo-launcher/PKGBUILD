@@ -6,11 +6,11 @@ depends=("kwindowsystem5" "qt5-base" "qt5-quickcontrols2" "qt5-tools")
 makedepends=("extra-cmake-modules")
 pkgdesc="Application launcher for Lingmo."
 pkgrel=1
-pkgver=2.0.0
+pkgver=2.0.1
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('eaa7cb7eb031a0f29930cb19f4251d2291a973327af9bddbbf5ff36739bc999f')
+sha256sums=('fcc5548817bc159fb1db2a20b4bcec5bfec2112e0526dda8b59956e85f6f0827')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"
