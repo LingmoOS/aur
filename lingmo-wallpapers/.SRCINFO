@@ -7,6 +7,6 @@ pkgbase = lingmo-wallpapers
 	license = GPL
 	makedepends = extra-cmake-modules
 	source = https://github.com/LingmoOS/lingmo-wallpapers/archive/refs/tags/2.1.1.tar.gz
-	sha256sums = 08b3b9bbfa1b8a0b6affcae144e359179779a6b58c564e918cb0c5465689eea6
+	sha256sums = 89b690fcca14e3cd271ddcadebf9465d1f1d9a28e12f80cdb8e3da29dae40a41
 
 pkgname = lingmo-wallpapers

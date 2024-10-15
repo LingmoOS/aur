@@ -11,6 +11,6 @@ pkgbase = lingmo-texteditor
 	depends = qt5-tools
 	depends = syntax-highlighting5
 	source = https://github.com/LingmoOS/lingmo-texteditor/archive/refs/tags/2.0.1.tar.gz
-	sha256sums = 89d7f31540b9af7cef74b89e65c9916a88a58ac6bb02fcde3142261f8497a64d
+	sha256sums = defb08cf3a2182511cbb8cdb23c110543b5ce6fbd73e1aa667739057d4d12371
 
 pkgname = lingmo-texteditor

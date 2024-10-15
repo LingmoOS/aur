@@ -9,6 +9,6 @@ pkgbase = lingmo-screenshots
 	depends = qt5-quickcontrols2
 	depends = qt5-tools
 	source = https://github.com/LingmoOS/lingmo-screenshots/archive/refs/tags/2.0.0.tar.gz
-	sha256sums = 9c12ddc29b68114eb5efdba205edf8134eb8129d5957c6e598ced1a01e4b5a49
+	sha256sums = caf3593f9db3b3551aef8339bd3edfc146be466b62907e16c085afa950986962
 
 pkgname = lingmo-screenshots

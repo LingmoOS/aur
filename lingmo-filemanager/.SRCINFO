@@ -10,6 +10,6 @@ pkgbase = lingmo-filemanager
 	depends = kwindowsystem5
 	depends = kio5
 	source = https://github.com/LingmoOS/lingmo-filemanager/archive/refs/tags/0.8.1.tar.gz
-	sha256sums = d0a6048bdd8cc5fa52f3b8eb113d4f0347ed163e8df965091bb188982c58afdf
+	sha256sums = d0e3fa82a244eb8ba990bb6997105046051fce58a4d7b22f5ffb2fcb70dae158
 
 pkgname = lingmo-filemanager

@@ -14,6 +14,6 @@ pkgbase = lingmo-terminal
 	depends = qt5-graphicaleffects
 	depends = lingmoui
 	source = https://github.com/LingmoOS/lingmo-terminal/archive/refs/tags/2.0.0.tar.gz
-	sha256sums = 9ab8356f9515936477adc7f981d5cc73897d39a0af7007a3e56f5243435f89ed
+	sha256sums = 262ed8f325de3ceb48b1bd0e6e2324b9bb9006e30f47799e476f79c44c4c3ec5
 
 pkgname = lingmo-terminal

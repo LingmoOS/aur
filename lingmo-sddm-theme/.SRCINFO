@@ -8,6 +8,6 @@ pkgbase = lingmo-sddm-theme
 	makedepends = extra-cmake-modules
 	depends = sddm
 	source = https://github.com/LingmoOS/lingmo-sddm-theme/archive/refs/tags/2.6.0.tar.gz
-	sha256sums = 15afece59efd3797d3bd69a5f7c619c2baa772bb2f13ee9b42ad1ac44301373d
+	sha256sums = bdedd5be033ab06a1de15f82e5872bb47af46b00f6b992fe5bf2698df7a98145
 
 pkgname = lingmo-sddm-theme

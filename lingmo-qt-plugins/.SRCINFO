@@ -13,6 +13,6 @@ pkgbase = lingmo-qt-plugins
 	depends = libdbusmenu-qt5
 	depends = libxcb
 	source = https://github.com/LingmoOS/lingmo-qt-plugins/archive/refs/tags/2.0.1.tar.gz
-	sha256sums = dc238ba3993ca02fe21b438cd7e4ad1dd8ba124a906f94f5a68872258998747e
+	sha256sums = 330bf2eacb3e7afdb55f046ebec372a706c65a1f9cef2d266c94683cde594690
 
 pkgname = lingmo-qt-plugins

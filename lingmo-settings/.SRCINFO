@@ -16,6 +16,6 @@ pkgbase = lingmo-settings
 	depends = libqtxdg
 	depends = lingmoui
 	source = https://github.com/LingmoOS/lingmo-settings/archive/refs/tags/3.0.0.tar.gz
-	sha256sums = dc86c475a3e7331a163d26c062183262a631f8a22194bc7b940fbb9a99723a00
+	sha256sums = 98807f0de21c421bd53d8bbe9c87d7af3fc55b2cea68ab20157d1bbb2a9f00c0
 
 pkgname = lingmo-settings

@@ -12,6 +12,6 @@ pkgbase = lingmo-dock
 	depends = qt5-tools
 	depends = lingmoui
 	source = https://github.com/LingmoOS/lingmo-dock/archive/refs/tags/2.0.3.tar.gz
-	sha256sums = 98bcd574998b9d452125a59ba0abcb439f0ecc903038d94301a9cbf759bd946b
+	sha256sums = 9fa03a701698dde9b916ec9d422426dada6c759041d37cc86c7a06ffc1f8a1d7
 
 pkgname = lingmo-dock
