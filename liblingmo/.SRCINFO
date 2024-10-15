@@ -14,6 +14,6 @@ pkgbase = liblingmo
 	depends = kio5
 	depends = qt5-sensors
 	source = https://github.com/LingmoOS/lib_lingmo/archive/refs/tags/1.9.10.tar.gz
-	sha256sums = 5164635f2a27d8f46bcd730e54cbbaffae20daf6a8bbc2ed1978b1655161ac14
+	sha256sums = be89a707f5aaae86bd4e59b0784f82414d380ce530d974d4e1fb62c42c4a4106
 
 pkgname = liblingmo
