@@ -10,7 +10,7 @@ get_latest_release_info() {
     local latest_info=$(curl -sL -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/LingmoOS/$repo_name/releases/latest")
 
     local version=$(echo "$latest_info" | jq -r '.tag_name')
-    local tarball_url=$(echo "$latest_info" | jq -r '.tarball_url')
+    local tarball_url="https://github.com/LingmoOS/$repo_name/archive/refs/tags/$version.tar.gz"
 
     local tempfile=$(mktemp)
     wget -q -O "$tempfile" "$tarball_url"
