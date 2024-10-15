@@ -13,7 +13,7 @@ pkgver=1.9.10
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/lib_lingmo/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('be89a707f5aaae86bd4e59b0784f82414d380ce530d974d4e1fb62c42c4a4106')
+sha256sums=('5164635f2a27d8f46bcd730e54cbbaffae20daf6a8bbc2ed1978b1655161ac14')
 
 prepare() {
     cd "${srcdir}/lib_lingmo-${pkgver}"

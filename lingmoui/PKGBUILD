@@ -10,7 +10,7 @@ pkgver=2.2.1
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('28a09d252f00f8f5f8e948ca2bc1f6e0dfc97776bc0cb7d28916590a64cc3e1f')
+sha256sums=('4feb069d34e5c53f2a1f3750e6f908a4d308ff7310eeaf5be1da39ac9e01417c')
 
 prepare() {
     cd "${srcdir}/LingmoUI-${pkgver}"

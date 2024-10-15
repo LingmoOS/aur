@@ -21,6 +21,6 @@ pkgbase = lingmo-core
 	depends = xf86-input-libinput
 	depends = xf86-input-synaptics
 	source = https://github.com/LingmoOS/lingmo-core/archive/refs/tags/2.0.1.tar.gz
-	sha256sums = ee39f817858b8c12643d181bb385c2e23701853c06f9e4facd30e08b3548c144
+	sha256sums = 9f1f0df483d3ef66db60338be0b4e8f54e663beab77b92427892c4a7be9f186a
 
 pkgname = lingmo-core
