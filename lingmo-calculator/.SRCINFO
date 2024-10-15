@@ -9,6 +9,6 @@ pkgbase = lingmo-calculator
 	depends = qt5-tools
 	depends = qt5-quickcontrols2
 	source = https://github.com/LingmoOS/lingmo-calculator/archive/refs/tags/0.6.2.tar.gz
-	sha256sums = 3ca6a0576844aa9762ee6381291a79f449b999d10f7d220522d84ba9cb6c9fc8
+	sha256sums = a0a1d22cb41ed3a26318e373003602ccf7ade740391f7d32714315bf5120eff0
 
 pkgname = lingmo-calculator
