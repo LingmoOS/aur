@@ -10,12 +10,12 @@ depends=(
 makedepends=('extra-cmake-modules' 'plasma-framework5')
 pkgdesc="KWin plugin for LingmoOS"
 pkgrel=1
-pkgver=1.2.2
+pkgver=1.2.3
 
 url="https://lingmo.org"
 license=("GPL")
 source=("https://github.com/LingmoOS/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('c8ed59c85f74403d7daa99eb511c5dee06b17ad82e594e678de2a3912e94748f')
+sha256sums=('67e505f36490bd9853c0a0c3dc660677da813105f13dd16e57a0856fc5ab5d76')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver//_/-}"
