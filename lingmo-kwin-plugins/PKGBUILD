@@ -5,7 +5,7 @@ arch=("x86_64")
 depends=(
     'kwin' 'qt5-base' 'qt5-declarative' 'kconfig'
     'kdecoration' 'kguiaddons' 'kcoreaddons' 'kconfigwidgets'
-    'kwindowsystem' 'kwayland'
+    'kwindowsystem' 'kwayland' 'kdecoration5'
 )
 makedepends=('extra-cmake-modules' 'plasma-framework5')
 pkgdesc="KWin plugin for LingmoOS"

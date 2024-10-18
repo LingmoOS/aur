@@ -17,6 +17,7 @@ pkgbase = lingmo-kwin-plugins
 	depends = kconfigwidgets
 	depends = kwindowsystem
 	depends = kwayland
+	depends = kdecoration5
 	source = https://github.com/LingmoOS/lingmo-kwin-plugins/archive/refs/tags/1.2.3.tar.gz
 	sha256sums = 67e505f36490bd9853c0a0c3dc660677da813105f13dd16e57a0856fc5ab5d76
 
