@@ -32,8 +32,6 @@ for pkgbuild in */PKGBUILD; do
     sed -i "s/^pkgver=.*/pkgver=$version/" "$pkgbuild"
     sed -i "s/^sha256sums=(.*)/sha256sums=('$sha256sum')/" "$pkgbuild"
     sed -i "s/^pkgrel=.*/pkgrel=1/" "$pkgbuild"
-    cd "$pkgname"
-    makepkg --printsrcinfo > .SRCINFO
-    cd ..
+    (cd "$pkgname" && makepkg --printsrcinfo > .SRCINFO)
     echo "$pkgname"
 done
