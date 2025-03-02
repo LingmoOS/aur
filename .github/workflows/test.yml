@@ -11,6 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     container: docker.io/library/archlinux:latest
     steps:
+    - name: Cache pacman packages
+      id: cache-pacman
+      uses: actions/cache@v4
+      with:
+        path: /var/cache/pacman/pkg
+        key: ${{ runner.os }}-pacman-${{ github.sha }}
+        restore-keys: ${{ runner.os }}-pacman-
+
     - name: Set up build environment
       run: |
         pacman-key --init
