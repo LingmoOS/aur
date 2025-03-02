@@ -9,7 +9,7 @@ depends=(
 )
 makedepends=("extra-cmake-modules")
 pkgdesc="The system settings application for LingmoOS uses LingmoUI as the interface style."
-pkgrel=3
+pkgrel=4
 pkgver=2.1.5+backport1
 url="https://lingmo.org"
 license=("GPL")
@@ -23,7 +23,7 @@ prepare() {
 
 build() {
     cd "${srcdir}/${pkgname}-${pkgver//+/-}/build"
-    cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_AR="gcc-ar" ..
+    cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_EXE_LINKER_FLAGS="--plugin=/usr/lib/gcc/*/*/liblto_plugin.so" ..
     make
 }
 package() {
