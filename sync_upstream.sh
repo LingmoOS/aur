@@ -6,8 +6,7 @@ declare -A map=(
 
 get_latest_release_info() {
     local repo_name=$1
-    # Note: Set GITHUB_TOKEN before running the script or you will get pkgver=null
-    local latest_info=$(curl -sL -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/LingmoOS/$repo_name/releases/latest")
+    local latest_info=$(curl -sL "https://api.github.com/repos/LingmoOS/$repo_name/releases/latest")
 
     local version=$(echo "$latest_info" | jq -r '.tag_name')
     local tarball_url="https://github.com/LingmoOS/$repo_name/archive/refs/tags/$version.tar.gz"
