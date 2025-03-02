@@ -4,12 +4,12 @@ pkgname=lingmo-kwin-plugins
 arch=("x86_64")
 depends=(
     'kwin' 'qt5-base' 'qt5-declarative' 'kconfig'
-    'kdecoration' 'kguiaddons' 'kcoreaddons' 'kconfigwidgets'
+    'kdecoration5' 'kguiaddons' 'kcoreaddons' 'kconfigwidgets'
     'kwindowsystem' 'kwayland'
 )
 makedepends=('extra-cmake-modules' 'plasma-framework5' 'kdecoration5')
 pkgdesc="KWin plugin for LingmoOS"
-pkgrel=2
+pkgrel=3
 pkgver=1.2.3
 
 url="https://lingmo.org"
