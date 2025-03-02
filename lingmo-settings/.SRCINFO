@@ -1,7 +1,7 @@
 pkgbase = lingmo-settings
 	pkgdesc = The system settings application for LingmoOS uses LingmoUI as the interface style.
 	pkgver = 2.1.5+backport1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://lingmo.org
 	arch = x86_64
 	license = GPL
