@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: docker.io/library/archlinux:latest
+    strategy:
+        matrix:
+          arch: ['x86_64']
     steps:
     - name: Cache pacman packages
       id: cache-pacman
@@ -52,3 +55,10 @@ jobs:
 
     - name: List Packages
       run: ls -lh /tmp/pkgs
+
+    - name: Upload packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ matrix.arch }}
+        compression-level: 0
+        path: /tmp/pkgs/*
