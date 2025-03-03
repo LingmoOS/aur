@@ -47,6 +47,8 @@ jobs:
             sudo -u builder makepkg -csi --noconfirm;cp *.pkg.tar.zst /tmp/pkgs
           popd)
         done
-        ls -lh /tmp/pkgs
-        du -sh /tmp/pkgs
+        rm /tmp/pkgs/*-debug-*.pkg.tar.zst
         true
+
+    - name: List Packages
+      run: ls -lh /tmp/pkgs
