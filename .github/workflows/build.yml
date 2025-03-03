@@ -1,4 +1,4 @@
-name: Test Building
+name: Build Packages
 
 on:
   push:
@@ -27,10 +27,14 @@ jobs:
         echo 'MAKEFLAGS="--jobs=$(nproc)"' >> /etc/makepkg.conf
         useradd -m builder
         echo 'builder ALL=(ALL:ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
+        sudo -u builder mkdir -pv /tmp/pkgs
         sudo -u builder git clone --depth 1 https://github.com/LingmoOS/aur /tmp/aur
         for i in modemmanager-qt5;do
           sudo -u builder git clone --depth 1 https://aur.archlinux.org/$i.git /tmp/$i
-          pushd /tmp/$i;sudo -u builder makepkg -csi --noconfirm --skippgpcheck;popd
+          pushd /tmp/$i
+            sudo -u builder makepkg -csi --noconfirm --skippgpcheck
+            cp *.pkg.tar.zst /tmp/pkgs
+          popd
         done
 
     - name: Build Packages
@@ -39,6 +43,10 @@ jobs:
         packages=($(ls -dU lingmoui *))
         packages=($(echo "${packages[@]}" | tr ' ' '\n' | awk '!seen[$0]++'))
         for i in "${packages[@]}";do
-          [ -d $i ] && (pushd $i;sudo -u builder makepkg -csi --noconfirm;popd)
+          [ -d $i ] && (pushd $i
+            sudo -u builder makepkg -csi --noconfirm;cp *.pkg.tar.zst /tmp/pkgs
+          popd)
         done
+        ls -lh /tmp/pkgs
+        du -sh /tmp/pkgs
         true
