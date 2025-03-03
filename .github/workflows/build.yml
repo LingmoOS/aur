@@ -62,3 +62,35 @@ jobs:
         name: ${{ matrix.arch }}
         compression-level: 0
         path: /tmp/pkgs/*
+
+  upload:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: ~/repo
+
+      - name: Install pacman
+        run: sudo apt update && sudo apt install pacman-package-manager libarchive-tools
+
+      - name: Build repository
+        run: |
+          cp -r --update ~/repo/* .
+          for i in $(ls);do
+            [ -d $i ] && repo-add $i/lingmo.db.tar.gz $i/*.pkg.tar.zst
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Update: $(date --rfc-3339=seconds)"
+          git push
