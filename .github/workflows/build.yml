@@ -92,5 +92,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Update: $(date --rfc-3339=seconds)"
+          git commit -m "Update: $(date --iso-8601=seconds)"
           git push
